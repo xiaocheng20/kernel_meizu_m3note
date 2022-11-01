@@ -27,7 +27,7 @@ case $ans in
 echo "zipfile"
 cp output/arch/arm64/boot/Image.gz-dtb ../AnyKernel3/
 cd ../AnyKernel3
-zip kernel.zip anykernel.sh LICENSE META-INF modules patch ramdisk README.md tools Image.gz-dtb
+zip -r kernel.zip anykernel.sh LICENSE META-INF modules patch ramdisk README.md tools Image.gz-dtb
        echo "finish"
        exit
 (N | n)

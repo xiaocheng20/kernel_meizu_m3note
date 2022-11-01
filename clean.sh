@@ -17,3 +17,13 @@ echo "======cleanner was finish=========="
 else 
 echo "+++++++++NO NEED CLEAN!++++++++++++"
 fi
+
+read -p "do you need make mrproper or clean?(Y or N)" jk
+case $jk in
+(y | Y )
+make mrproper && make clean
+esac
+case $jk in
+(n | N)
+echo "WE NOT MAKE MRPROPER NOW!"
+esac
